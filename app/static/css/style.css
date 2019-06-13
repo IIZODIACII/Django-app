@@ -1,0 +1,19 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-position: center;
+  background-color: rgba(53, 1, 1, 0.637);
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  height: 200px;
+  width: 410px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+}
