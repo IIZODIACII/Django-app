@@ -7,20 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link href="{% static "css/style.css" %}" rel="stylesheet" />
+    <script src="{% static "scripts/script.js" %}""></script>
   </head>
   <body>
-    <form action="">
+    <form action="" onsubmit="return validateForm()" method="POST  {% csrf_token %}">
       <div class="content">
         Array Size
         <span style="margin-left: 158px">
-          <input type="number"/> <br /><br
+          <input type="number" id ="size" name ="size" required/> <br /><br
         /></span>
-        Numbers separated by a comma <input type="text" /> <br /><br />
+        Numbers separated by a comma 
+        <input type="text" id = "array" name ="array" required/> <br /><br />
         Average
         <span style="margin-left: 173px">
-          <input type="number"/> <br /><br
+          <input type="number" id = "average" name ="average" required/> <br /><br
         /></span>
-        <input type="submit" />
+        <input type="submit"/>
       </div>
     </form>
   </body>

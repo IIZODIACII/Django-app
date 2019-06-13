@@ -127,3 +127,5 @@ STATIC_URL = '/static/'
 TEMPLATE_DIRS = (
     os.path.join(SETTINGS_PATH, 'templates'),
 )
+
+CSRF_COOKIE_SECURE = True
