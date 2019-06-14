@@ -9,3 +9,7 @@ from django.shortcuts import render_to_response
 def index(request):
     template = loader.get_template("index.html")
     return HttpResponse(template.render())
+
+def result(request):
+    template = loader.get_template("result.html")
+    return HttpResponse(template.render())
