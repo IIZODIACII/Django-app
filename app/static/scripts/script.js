@@ -15,9 +15,6 @@ function validateForm() {
   if (!valid) {
     alert("all the numbers must be integers in the array");
     return false;
-  } else if (size <= 0) {
-    alert("the Size can't be zero or a negative number");
-    return false;
   } else {
     return true;
   }
