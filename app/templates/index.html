@@ -10,19 +10,19 @@
     <script src="{% static "scripts/script.js" %}""></script>
   </head>
   <body>
-    <form action="" onsubmit="return validateForm()" method="POST  {% csrf_token %}">
-      <div class="content">
+    <form action="result" onsubmit="return validateForm()" method="POST  {% csrf_token %}">
+       <div class="content">
         Array Size
-        <span style="margin-left: 158px">
-          <input type="number" id ="size" name ="size" required/> <br /><br
-        /></span>
-        Numbers separated by a comma 
+        <span style="margin-left: 200px;">
+          <input type="number" id ="size" name ="size" required/> <br /><br/>
+        </span>
+        Numbers comma separated
         <input type="text" id = "array" name ="array" required/> <br /><br />
         Average
-        <span style="margin-left: 173px">
-          <input type="number" id = "average" name ="average" required/> <br /><br
-        /></span>
-        <input type="submit"/>
+        <span style="margin-left: 230px;">
+          <input type="number" id = "average" name ="average" required/> <br /><br/>
+        </span>
+        <input type="submit" class="button"/>
       </div>
     </form>
   </body>

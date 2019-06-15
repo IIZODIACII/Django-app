@@ -1,5 +1,5 @@
 function validateForm() {
-  // var size = document.getElementById("size").value;
+  var size = document.getElementById("size").value;
   var array = document.getElementById("array").value.split(",");
   // var average = document.getElementById("average").value;
 
@@ -15,5 +15,10 @@ function validateForm() {
   if (!valid) {
     alert("all the numbers must be integers in the array");
     return false;
-  } else return true;
+  } else if (size <= 0) {
+    alert("the Size can't be zero or a negative number");
+    return false;
+  } else {
+    return true;
+  }
 }
