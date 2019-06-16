@@ -17,3 +17,5 @@ https://romandc.com/zappa-django-guide/
 https://blog.lawrencemcdaniel.com/serve-a-django-app-from-an-aws-lambda-function/
 
 https://stackoverflow.com/questions/50937959/zappa-deployment-error-get-request-yields-502-response-code
+
+Heroku: https://gp-django-app.herokuapp.com/app/
