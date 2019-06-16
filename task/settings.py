@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+import django_heroku 
 import os
 SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -129,3 +129,4 @@ TEMPLATE_DIRS = (
 )
 
 CSRF_COOKIE_SECURE = True
+django_heroku.settings(locals())
